@@ -1,0 +1,42 @@
+lib/
+│── core/                    # Shared components across the app
+│   ├── error/               # Error handling classes
+│   ├── usecase/             # Base use case classes
+│   ├── network/             # API handling and networking
+│   ├── utils/               # Helper functions
+│   ├── theme/               # Global theme & styles
+│── config/                  # App-wide configurations
+│── features/                # Feature-based modularization
+│   ├── home/                # Home screen feature
+│   │   ├── presentation/    # UI and widgets
+│   │   ├── domain/          # Business logic (use cases, repositories)
+│   │   ├── data/            # Data layer (models, repositories implementation)
+│   ├── scan/                # Scan rice disease feature
+│   │   ├── presentation/
+│   │   ├── domain/
+│   │   ├── data/
+│   ├── diagnosis_log/       # Diagnosis history feature
+│   │   ├── presentation/
+│   │   ├── domain/
+│   │   ├── data/
+│   ├── common_diseases/     # List of common rice diseases
+│   │   ├── presentation/
+│   │   ├── domain/
+│   │   ├── data/
+│   ├── saved/               # Saved disease logs and results
+│   │   ├── presentation/
+│   │   ├── domain/
+│   │   ├── data/
+│   ├── report_disease/      # Report new rice disease cases
+│   │   ├── presentation/
+│   │   ├── domain/
+│   │   ├── data/
+│── main.dart                # Entry point of the application
+│── app.dart                 # App initialization & navigation handling
+│── routes.dart              # Centralized route management
+│── injection.dart           # Dependency Injection setup
+│── localization/            # Multi-language support
+│── services/                # Shared services (camera, notifications, etc.)
+│── widgets/                 # Reusable UI components
+│── models/                  # Shared models (if needed)
+│── repository/              # Repository implementation (if global)
