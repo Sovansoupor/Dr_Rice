@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HeroSlider extends StatefulWidget {
-  const HeroSlider({Key? key}) : super(key: key);
+  const HeroSlider({super.key});
 
   @override
   State<HeroSlider> createState() => _HeroSliderState();
